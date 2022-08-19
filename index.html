@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main>
+        <section class="container mx-auto w-4/12">
+            <h1 class="text-3xl text-center mt-5 mb-3">Calculator Using JS</h1>
+            <div class="container bg-slate-800 p-4 border-8 rounded-2xl border-gray-600 shadow-2xl">
+                <div class="w-full">
+                    <input type="text" id="display" class="w-full h-14 text-right text-4xl pr-4 rounded" placeholder="0">
+                </div>
+                <div>
+                    <div class="grid grid-cols-4 gap-1 mt-5">
+                        <button class="h-12 bg-slate-700 text-slate-300 text-2xl" id="modulas" onclick="insertBtn('%')" value="%">%</button>
+                        <button class="h-12 bg-slate-700 text-slate-300 text-2xl" id="clear-all" onclick="clearAll()">CE</button>
+                        <button class="h-12 bg-slate-700 text-slate-300" id="clear" value=""><i class="fa-solid fa-delete-left"></i></button>
+                        <button class="h-12 bg-slate-700 text-slate-300 text-2xl" id="divide" onclick="insertBtn('/')" value="/"><i class="fa-solid fa-divide"></i></button>
+                        <button class="h-12 bg-slate-700 text-slate-300 text-2xl" id="seven" onclick="insertBtn(7)" value="7">7</button>
+                        <button class="h-12 bg-slate-700 text-slate-300 text-2xl" id="eight" onclick="insertBtn(8)" value="8">8</button>
+                        <button class="h-12 bg-slate-700 text-slate-300 text-2xl" id="nine" onclick="insertBtn(9)" value="9">9</button>
+                        <button class="h-12 bg-slate-700 text-slate-300 text-2xl" id="divide" onclick="insertBtn('*')" value="*"><i class="fa-solid fa-xmark"></i></button>
+                        <button class="h-12 bg-slate-700 text-slate-300 text-2xl" id="four" onclick="insertBtn(4)" value="4">4</button>
+                        <button class="h-12 bg-slate-700 text-slate-300 text-2xl" id="five" onclick="insertBtn(5)" value="5">5</button>
+                        <button class="h-12 bg-slate-700 text-slate-300 text-2xl" id="six" onclick="insertBtn(6)" value="6">6</button>
+                        <button class="h-12 bg-slate-700 text-slate-300 text-2xl" id="minus" onclick="insertBtn('-')" value="-"><i class="fa-solid fa-minus"></i></button>
+                        <button class="h-12 bg-slate-700 text-slate-300 text-2xl" id="one" onclick="insertBtn(1)" value="1">1</button>
+                        <button class="h-12 bg-slate-700 text-slate-300 text-2xl" id="two" onclick="insertBtn(2)" value="2">2</button>
+                        <button class="h-12 bg-slate-700 text-slate-300 text-2xl" id="three" onclick="insertBtn(3)" value="3">3</button>
+                        <button class="h-12 bg-slate-700 text-slate-300 text-2xl" id="plus" onclick="insertBtn('+')" value="+"><i class="fa-solid fa-plus"></i></button>
+                        <button class="h-12 bg-slate-700 text-slate-300 text-2xl" id="point" onclick="insertBtn('.')" value=".">.</button>
+                        <button class="h-12 bg-slate-700 text-slate-300 text-2xl" id="zero" onclick="insertBtn(0)" value="0">0</button>
+                        <button class="h-12 col-span-2 bg-sky-700 text-slate-300 text-2xl" id="equal" value="="><i class="fa-solid fa-equals"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/calculation.js"></script>
+</body>
+</html>
